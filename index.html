@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/da347b59d8.js" crossorigin="anonymous"></script>
+    <title>Dashboard</title>
+</head>
+<body>
+    <style>
+        body {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+            font-style: normal;
+            background-color: rgb(209, 208, 208);
+        }
+    </style>
+
+    <!-- Barre latérale et contenu principal -->
+    <section class="ml-16 m-5 h-[90vh] bg-white rounded-lg flex">
+        <!-- Sidebar -->
+        <div class="w-44 h-[535px] bg-[#02002d] text-white text-[9px] rounded-lg">
+            <img src="Logo.jpg" class="rounded-lg w-72">
+            <div class="border opacity-30 border-red-50"></div>
+            <ul class="ml-9 mt-5">
+                <li class="mt-6">Main</li>
+                <li class="mt-5 ml-3"><span class="text-[9px] mr-1"><i class="fa-solid fa-border-all"></i></span> Overview</li>
+                <li class="mt-5 ml-3"> <span class="text-[9px] mr-1"><i class="fa-solid fa-message"></i></span>Call Analytics</li>
+                <li class="mt-5 ml-3"><span class="text-[9px] mr-1"><i class="fa-solid fa-magnifying-glass-chart"></i></span>Call Metrics</li>
+                <li class="mt-5 ml-3"><span class="text-[9px] mr-1"><i class="fa-solid fa-file-lines"></i></span>Reports</li>
+                <li class="mt-5 ml-3"><span class="text-[9px] mr-1"><i class="fa-solid fa-people-group"></i></span>Team Member</li>
+                <li class="mt-5 ml-3"><span class="text-[9px] mr-1"><i class="fa-solid fa-square-phone"></i></span>Contact</li>
+                <li class="mt-5 ml-3"><span class="text-[9px] mr-1"><i class="fa-solid fa-building"></i></span>Companies</li>
+            </ul>
+            <div class="border opacity-30 border-red-50 w-32 ml-3 mt-4"></div>
+            <ul class="ml-12 mt-4">
+                <li class="mt-5">Help</li>
+                <li class="mt-5 ml-3"><span class="text-[9px] mr-1"><i class="fa-solid fa-envelope"></i></span>Support</li>
+                <li class="mt-5 ml-3"><span class="text-[9px] mr-1"><i class="fa-solid fa-gear"></i></span>Settings</li>
+            </ul>
+            <span>
+                <img src="NN.jpeg" class="w-5 h-5 rounded-full mt-8 ml-16 text-[5px]">
+                <h6 class="text-center">Jeannette</h6>
+                <h6 class="text-center">jeannette@gmail.com</h6>
+            </span>
+        </div>
+
+        <!-- Contenu principal -->
+        <div class="flex flex-col w-full">
+            <div class="flex gap-[550px]">
+                <img src="LG.jpg" class="w-24 m-[0.59rem]">
+                <div style="position: relative; width: max-content">
+                    <div class="flex">
+                        <div class="flex gap-4 relative">
+                            <span style="position: absolute; font-size: 10px; top: 15px; left: 28px;">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </span>
+
+                            <input type="text" class="w-60 bg-slate-100 p-3 h-2 mt-[0.59rem] ml-4">
+                            <p class="text-[9px] ml-5 absolute top-4 left-6">Search or type a command</p>
+                            <button style="position: absolute; right: 10px; top: 12px; font-weight: bold; 
+                                background-color: white; border: 1px solid black; font-size: 9px; padding: 1px; 
+                                border-radius: 5px;">
+                                <span class="w-15"><i class="fa-solid fa-hexagon-nodes"></i></span> F
+                            </button>
+                        </div>
+                        <div class="flex gap-4 ml-4 mt-3">
+                            <span class="flex items-center justify-center w-5 h-5 bg-slate-200 text-[12px] rounded-full">
+                                <i class="fa-solid fa-bell"></i>
+                            </span>
+                            <span class="flex items-center justify-center w-5 h-5 bg-slate-200 text-[12px] rounded-full">
+                                <i class="fa-solid fa-envelope"></i>
+                            </span>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+            </div>
+            <div class="border-t border-gray-400 opacity-50 w-full mt-0"></div>
+
+                <!-- CONTENU -->
+                <section class="flex">
+                    <div class="flex flex-col items-center justify-center mt-6 ml-4 bg-blue-500 p-3 w-60 rounded-lg">
+                        <span class="w-10 h-10 bg-white text-blue-500 flex items-center justify-center rounded-full">
+                            <i class="fa-solid fa-phone-volume"></i>
+                        </span>
+                        <h5 class="text-white text-sm mt-2">Incoming Calls</h5>
+                        <div class="flex items-center gap-2 mt-2">
+                            <h1 class="text-white text-3xl font-bold">256k</h1>
+                            <h6 class="text-white text-[10px] flex items-center gap-1">
+                                +2.5% <span class="text-[10px]"><i class="fa-solid fa-arrow-up"></i></span>
+                            </h6>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col items-center justify-center mt-6 ml-2 bg-white shadow-lg p-3 w-60 rounded-lg">
+                        <span class="w-10 h-10 bg-violet-200 text-violet-600 flex items-center justify-center rounded-full">
+                            <i class="fa-solid fa-phone-volume"></i>
+                        </span>
+                        <h5 class="text-black text-sm mt-2">Answered Calls</h5>
+                        <div class="flex items-center gap-2 mt-2">
+                            <h1 class="text-black text-3xl font-bold">136k</h1>
+                            <h6 class="text-green-500 text-[10px] flex items-center gap-1">
+                                +2.5% <span class="text-[10px]"><i class="fa-solid fa-arrow-up"></i></span>
+                            </h6>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col items-center justify-center mt-6 ml-2 bg-white shadow-lg p-3 w-60 rounded-lg">
+                        <span class="w-10 h-10 bg-yellow-200 text-yellow-600 flex items-center justify-center rounded-full">
+                            <i class="fa-solid fa-phone-volume"></i>
+                        </span>
+                        <h5 class="text-black text-sm mt-2">Abandoned Calls</h5>
+                        <div class="flex items-center gap-2 mt-2">
+                            <h1 class="text-black text-3xl font-bold">120k</h1>
+                            <h6 class="text-red-400 text-[10px] flex items-center gap-1">
+                                -0.5% <span class="text-[10px]"><i class="fa-solid fa-arrow-down"></i></i></span>
+                            </h6>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col items-center justify-center mt-6 ml-2 shadow-lg bg-white p-3 w-60 rounded-lg">
+                        <span class="w-10 h-10 bg-orange-300 text-orange-500 flex items-center justify-center rounded-full">
+                            <i class="fa-solid fa-phone-volume"></i>
+                        </span>
+                        <h5 class="text-black text-sm mt-2">Total Calls</h5>
+                        <div class="flex items-center gap-2 mt-2">
+                            <h1 class="text-black text-3xl font-bold">376k</h1>
+                            <h6 class="text-green-600 text-[10px] flex items-center gap-1">
+                                +2.5% <span class="text-[10px]"><i class="fa-solid fa-arrow-up"></i></span>
+                            </h6>
+                        </div>
+                    </div>
+                </section>
+                
+                    <section class="flex gap-[500px] mt-7 ml-4">
+                        <div class="flex gap-4">
+                            <h3 class="text-[14px] font-extrabold">Overall Calls Volume</h3>
+                            <h6 class="text-[12px]"><span><i class="fas fa-caret-down"></i></span> In This Year</h6>
+                        </div>
+                        <div class="flex gap-4">
+                            <h6 class="text-[10px] font-extrabold">
+                                <span class="w-20 text-sky-600"><i class="fa-solid fa-stop"></i></span> Incomming Calls</h6>
+                            <h6 class="text-[10px] font-extrabold"> <span class="w-20 text-violet-600"><i class="fa-solid fa-stop"></i></span> Answered Calls</h6>
+                        </div>
+                    </section>
+
+                    <div class="flex justify-center items-center">
+                        <img src="graphe.jpg" alt="Graphique" class="w-full h-32 rounded-lg shadow-md object-fill">
+                    </div>
+                    
+
+                    <section class="flex gap-4">
+                        <h1 class="font-extrabold ml-4 mt-2 text-sm">Best Agents This Week</h1>
+                    </section>
+                    
+                    <section class="flex gap-6 items-start p-4">
+                        <!-- Tableau -->
+                        <div class="w-[55%]">
+                            <div class="flex gap-14 text-[10px] mb-2">
+                                <h5>Agents</h5>
+                                <h5>Answered</h5>
+                                <h5>Abandoned</h5>
+                                <h5>Cust. Satisfaction</h5>
+                            </div>
+                            <div class="border-t border-gray-400 opacity-50 w-96 mb-2"></div>
+                            <div>
+                                <div class="flex gap-10 text-[10px]">
+                                    <h5> <span class="text-[16px] mr-3"><i class="fa-solid fa-circle-user"></i></span>Sugiyono</h5>
+                                    <h5 class=" mt-2">120</h5>
+                                    <h5 class="ml-10 mt-2">20</h5>
+                                    <h5 class="ml-16 mt-2">4.8/5</h5>
+                                </div>
+                                <div class="border-t border-gray-400 opacity-50 w-96 mt-2 mb-2"></div>
+                                <div class="flex gap-6 text-[10px] ">
+                                    <h5><span class="text-[16px] mr-3"><i class="fa-solid fa-circle-user"></i></span>Shakir Ramzi</h5>
+                                    <h5 class="mr-0 mt-2">130</h5>
+                                    <h5 class="ml-14 mt-2">55</h5>
+                                    <h5 class="ml-20 mt-2">4.9/5</h5>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <!-- Image -->
+                        <div class="w-[22%]">
+                            <img src="img1.jpg" alt="" class="w-60 h-full rounded-lg shadow-md object-fill">
+                        </div>
+                        <div class="w-[22%]">
+                            <img src="img1.jpg" alt="" class="w-60 h-full rounded-lg shadow-md object-fill">
+                        </div>
+                    </section>
+                    
+                    
+                    
+                    
+        </div>
+    </section>
+
+</body>
+</html>
